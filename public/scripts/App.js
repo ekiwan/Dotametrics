@@ -1,5 +1,5 @@
 var App = {};
 
 App.init = function() {
-	console.log('App starting!');
+  console.log('App starting!');
 };
