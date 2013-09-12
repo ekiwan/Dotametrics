@@ -1,7 +1,10 @@
-var App = {};
-
-App.init = function() {
-  console.log('App starting!');
-};
-
-App.init();
+angular.module('app', ['ngRoute'])
+.config([
+  '$routeProvider',
+  function($routeProvider) {
+  $routeProvider.when('/',{
+    controller: 'FrameController',
+    templateUrl: 'views/frame.html'
+  });
+  }
+]);

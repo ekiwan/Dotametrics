@@ -3,10 +3,16 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" href="styles/index.css">
-	<script src="scripts/App.js"></script>
 </head>
-<body>
-	<h1>Dotametrics</h1>
-	<p>Know how you play. Improve your game.</p>
+<body ng-app="app">
+  <div ng-controller="FrameController">
+    <h1>Dotametrics {{ name }}</h1>
+    <p>Know how you play. Improve your game.</p>
+  </div>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js"></script>
+  <script type="text/javascript" src="//code.angularjs.org/1.2.0-rc.2/angular-route.js"></script>
+
+  <script src="scripts/App.js"></script>
+  <script src="scripts/controllers/frame.js"></script>
 </body>
 </html>
