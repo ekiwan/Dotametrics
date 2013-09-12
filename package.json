@@ -1,0 +1,10 @@
+{
+  "name": "dota2",
+  "description": "Stats",
+  "version": "0.0.0",
+  "devDependencies": {
+    "stylus": "~0.37.0",
+    "express": "~3.4.0",
+    "nib": "~1.0.1"
+  }
+}
