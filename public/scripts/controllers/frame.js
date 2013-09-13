@@ -1,3 +1,5 @@
-angular.module('app').controller('FrameController', function ($scope){ 
-    $scope.name = "f u angular";
-});
+angular.module('app')
+  .controller('FrameController', function ($scope) { 
+    console.log($scope)
+    $scope.name = 'i <3 angular';
+  });
