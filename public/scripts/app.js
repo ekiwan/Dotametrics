@@ -1,5 +1,6 @@
 //app
-angular.module('app', [
+angular.module('dotametrics', [
+  //dependencies
   'ngRoute',
   'app.controllers',
   'app.directives',
@@ -9,8 +10,8 @@ angular.module('app', [
 
 //Controllers
 angular.module('app.controllers', [
-  'app.controllers.frame',
-  'app.controllers.test'
+  'app.controllers.graph',
+  'app.controllers.nav'
 ]);
 
 //Directives

@@ -1,13 +1,13 @@
-angular.module('app')
+angular.module('dotametrics')
   .config(['$routeProvider',
     function($routeProvider) {
       $routeProvider
         .when('/', {
-          controller: 'FrameController',
+          controller: 'GraphController',
           template: ''
         })
-        .when('/test', {
-          controller: 'TestController',
+        .when('/', {
+          controller: 'GraphController',
           templateUrl: 'templates/test.html'
         });
     }

@@ -1,4 +1,4 @@
-angular.module('app.controllers.test', [])
-  .controller('TestController', ['$scope', function ($scope) { 
+angular.module('app.controllers.nav', [])
+  .controller('NavController', ['$scope', function ($scope) { 
     console.log($scope)
   }]);
