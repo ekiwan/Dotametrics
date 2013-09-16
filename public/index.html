@@ -17,7 +17,7 @@
     <p>Know how you play. Improve your game.</p>
     <!-- use ng-include for the persistent html view -->
     <div ng-controller='GraphController'>
-      <div ng-bind="message"/>
+      <ng-include src="'templates/chart.html'"></ng-include>
     </div>
     <div ng-controller="NavController">
       <div ng-view/>

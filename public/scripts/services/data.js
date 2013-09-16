@@ -1,11 +1,7 @@
 angular.module('app.services.data', [])
   .factory('Data', [function () { 
     return {
-      data: {
-        kills: 10,
-        deaths: 3,
-        assists: 5
-      },
+      data: [10, 6, 6],
       message: 'hello'
     };
   }]);
