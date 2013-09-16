@@ -7,8 +7,8 @@ angular.module('dotametrics')
           template: ''
         })
         .when('/', {
-          controller: 'GraphController',
-          templateUrl: 'templates/test.html'
+          controller: 'NavController',
+          templateUrl: 'templates/nav.html'
         });
     }
   ]);

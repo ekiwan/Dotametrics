@@ -6,7 +6,7 @@
   </head>
   <body ng-app="dotametrics">
     <!-- use ng-include for the persistent html view -->
-    <div ng-controller='FrameController'>
+    <div ng-controller='GraphController'>
       <p>This is the main view.</p>
       <div id="logo"><img src="img/dota2_logo.png"/></div>
       <h1>Dotametrics</h1>
@@ -19,7 +19,7 @@
 
   <script src="scripts/app.js"></script>
   <script src="scripts/config.js"></script>
-
-  <script src="scripts/controllers/frame.js"></script>
-  <script src="scripts/controllers/test.js"></script>
+  <script src="scripts/services/data.js"></script>
+  <script src="scripts/controllers/graph.js"></script>
+  <script src="scripts/controllers/nav.js"></script>
 </html>
