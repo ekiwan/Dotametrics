@@ -1,6 +1,11 @@
 angular.module('app.services.data', [])
   .factory('Data', [function () { 
     return {
-      message: "hello"
+      data: {
+        kills: 10,
+        deaths: 3,
+        assists: 5,
+        message: 'hello'
+      }
     };
   }]);

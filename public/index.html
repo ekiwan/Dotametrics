@@ -5,14 +5,16 @@
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body ng-app="dotametrics">
+    <div id="logo"><img src="img/dota2_logo.png"/></div>
+    <h1>Dotametrics</h1>
+    <p>Know how you play. Improve your game.</p>
     <!-- use ng-include for the persistent html view -->
     <div ng-controller='GraphController'>
-      <p>This is the main view.</p>
-      <div id="logo"><img src="img/dota2_logo.png"/></div>
-      <h1>Dotametrics</h1>
-      <p>Know how you play. Improve your game.</p>
+      <div ng-bind="message"/>
     </div>
-    <div ng-view></div>
+    <div ng-controller="NavController">
+      <div ng-view/>
+    </div>
   </body>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js"></script>
   <script src="//code.angularjs.org/1.2.0-rc.2/angular-route.js"></script>
