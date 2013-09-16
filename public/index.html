@@ -1,10 +1,17 @@
 <!doctype html>
-<html>
+<html ng-app="dotametrics">
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js"></script>
+  <script src="//code.angularjs.org/1.2.0-rc.2/angular-route.js"></script>
+  <script src="lib/Chart.js"></script>
+  <script src="lib/angles.js"></script>
+  <link rel="stylesheet" href="styles/index.css">
+
   <head>
-    <title></title>
-    <link rel="stylesheet" href="styles/index.css">
+    <title>Dotametrics</title>
   </head>
-  <body ng-app="dotametrics">
+
+  <body>
     <div id="logo"><img src="img/dota2_logo.png"/></div>
     <h1>Dotametrics</h1>
     <p>Know how you play. Improve your game.</p>
@@ -16,13 +23,12 @@
       <div ng-view/>
     </div>
   </body>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js"></script>
-  <script src="//code.angularjs.org/1.2.0-rc.2/angular-route.js"></script>
+
 
   <script src="scripts/app.js"></script>
   <script src="scripts/config.js"></script>
   <script src="scripts/services/data.js"></script>
   <script src="scripts/controllers/graph.js"></script>
   <script src="scripts/controllers/nav.js"></script>
-  <script src="lib/Chart.js"></script>
+
 </html>

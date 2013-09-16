@@ -4,8 +4,8 @@ angular.module('app.services.data', [])
       data: {
         kills: 10,
         deaths: 3,
-        assists: 5,
-        message: 'hello'
-      }
+        assists: 5
+      },
+      message: 'hello'
     };
   }]);

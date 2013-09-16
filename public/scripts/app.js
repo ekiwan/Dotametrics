@@ -1,6 +1,7 @@
 //app
 angular.module('dotametrics', [
   //dependencies
+  'angles',
   'ngRoute',
   'app.controllers',
   'app.directives',
