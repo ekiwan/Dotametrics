@@ -13,7 +13,8 @@ angular.module('dotametrics', [
 angular.module('app.controllers', [
   'app.controllers.bar',
   'app.controllers.kda',
-  'app.controllers.nav'
+  'app.controllers.nav',
+  'app.controllers.winrate'
 ]);
 
 //Directives

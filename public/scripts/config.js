@@ -10,9 +10,9 @@ angular.module('dotametrics')
           controller: 'KdaController',
           templateUrl: 'templates/kda.html'
         })
-        // .when('/', {
-        //   controller: 'NavController',
-        //   templateUrl: 'templates/nav.html'
-        // });
+        .when('/winrate', {
+          controller: 'WinrateController',
+          templateUrl: 'templates/winrate.html'
+        });
     }
   ]);
