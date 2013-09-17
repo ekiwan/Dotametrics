@@ -12,6 +12,7 @@ angular.module('dotametrics', [
 //Controllers
 angular.module('app.controllers', [
   'app.controllers.bar',
+  'app.controllers.kda',
   'app.controllers.nav'
 ]);
 

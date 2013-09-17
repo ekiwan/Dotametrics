@@ -6,6 +6,10 @@ angular.module('dotametrics')
           controller: 'BarController',
           templateUrl: 'templates/bar.html'
         })
+        .when('/kda', {
+          controller: 'KdaController',
+          templateUrl: 'templates/kda.html'
+        })
         // .when('/', {
         //   controller: 'NavController',
         //   templateUrl: 'templates/nav.html'
