@@ -1,35 +1,78 @@
-<!doctype html>
-<html ng-app="dotametrics">
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> 
+<!--<![endif]-->
+<head>
 
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Dotametrics</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="stylesheets/base.css">
+  <link rel="stylesheet" href="stylesheets/skeleton.css">
+  <link rel="stylesheet" href="stylesheets/layout.css">
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js"></script>
   <script src="//code.angularjs.org/1.2.0-rc.2/angular-route.js"></script>
   <script src="lib/Chart.js"></script>
   <script src="lib/angles.js"></script>
-  <link rel="stylesheet" href="styles/index.css">
 
-  <head>
-    <title>Dotametrics</title>
-  </head>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-  <body>
-    <div id="logo"><img src="img/dota2_logo.png"/></div>
-    <h1>Dotametrics</h1>
-    <p>Know how you play. Improve your game.</p>
-    <!-- use ng-include for the persistent html view -->
-    <div ng-controller='GraphController'>
-      <ng-include src="'templates/chart.html'"></ng-include>
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body ng-app="dotametrics">
+
+
+
+  <!-- Primary Page Layout
+  ================================================== -->
+
+  <!-- Delete everything in this .container and get started on your own site! -->
+
+  <div class="container">
+    <div class="sixteen columns">
+      <h1 class="remove-bottom" style="margin-top: 40px">Dotametrics</h1>
+      <h5>Version 1</h5>
+      <hr />
     </div>
-    <div ng-controller="NavController">
+    <div class="one-third column" ng-conroller="NavController">
+      <h3>Choose your stats</h3>
       <ng-include src="'templates/nav.html'"></ng-include>
     </div>
-  </body>
+    <div class="two-thirds column" ng-view>
+      <h3>The Data</h3>
+      
+    </div>
+  </div><!-- container -->
 
 
+<!-- End Document
+================================================== -->
+</body>
   <script src="scripts/app.js"></script>
   <script src="scripts/config.js"></script>
   <script src="scripts/services/data.js"></script>
   <script src="scripts/services/options.js"></script>
   <script src="scripts/controllers/graph.js"></script>
   <script src="scripts/controllers/nav.js"></script>
-
 </html>

@@ -11,7 +11,7 @@ angular.module('dotametrics', [
 
 //Controllers
 angular.module('app.controllers', [
-  'app.controllers.graph',
+  'app.controllers.bar',
   'app.controllers.nav'
 ]);
 

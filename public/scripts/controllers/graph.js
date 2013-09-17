@@ -1,6 +1,6 @@
-angular.module('app.controllers.graph', ['app.services.data', 'app.services.options'])
-  .controller('GraphController', ['$scope', 'Data', 'Options', function ($scope, Data, Options) { 
-    console.log($scope)
+angular.module('app.controllers.bar', ['app.services.data', 'app.services.options'])
+  .controller('BarController', ['$scope', 'Data', 'Options', function ($scope, Data, Options) { 
+    console.log('bar chart controller')
     $scope.chart = {
       labels: ["Kills", "Deaths", "Assists"],
       datasets: [

@@ -2,13 +2,13 @@ angular.module('dotametrics')
   .config(['$routeProvider',
     function($routeProvider) {
       $routeProvider
-        .when('/', {
-          controller: 'GraphController',
-          template: ''
+        .when('/bar', {
+          controller: 'BarController',
+          templateUrl: 'templates/chart.html'
         })
-        .when('/', {
-          controller: 'NavController',
-          templateUrl: 'templates/nav.html'
-        });
+        // .when('/', {
+        //   controller: 'NavController',
+        //   templateUrl: 'templates/nav.html'
+        // });
     }
   ]);
