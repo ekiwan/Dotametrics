@@ -3,15 +3,15 @@ angular.module('app.controllers.kda', ['app.services.data', 'app.services.option
     console.log('kda chart controller', $scope)
     $scope.chart = [
       {
-        value: 30,
+        value: Data.data.kdaData[0],
         color: "#F7464A"
       },
       {
-        value : 50,
+        value : Data.data.kdaData[1],
         color : "#E2EAE9"
       },
       {
-        value : 100,
+        value : Data.data.kdaData[2],
         color : "#D4CCC5"
       }
     ];
