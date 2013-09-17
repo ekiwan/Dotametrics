@@ -4,7 +4,7 @@ angular.module('dotametrics')
       $routeProvider
         .when('/bar', {
           controller: 'BarController',
-          templateUrl: 'templates/chart.html'
+          templateUrl: 'templates/bar.html'
         })
         // .when('/', {
         //   controller: 'NavController',
