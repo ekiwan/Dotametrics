@@ -19,6 +19,6 @@ angular.module('app.controllers.bar', ['app.services.data', 'app.services.option
           data: Data.data.barData[1]
         }
       ],
-      options: Options.barOptions
-    }
+    };
+    $scope.options = Options.barOptions;
   }]);
