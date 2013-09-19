@@ -1,3 +1,7 @@
-<form>
-  <button name="kda" ng-click="setPath('/bar')">KDA</button>
-</form>
+<div ng-controller="NavController">
+  <form>
+    <button name="kda" ng-click="changePath('/kda')">KDA</button>
+    <button name="winrate" ng-click="changePath('/winrate')">Winrate</button>
+    <button name="bar" ng-click="changePath('/bar')">Bar</button>
+  </form>
+</div>
