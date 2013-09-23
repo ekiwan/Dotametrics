@@ -4,6 +4,9 @@ var nib = require('nib');
 
 var app = express();
 
+// Make config available for any module
+global.config = require('./config.json');
+
 // Log requests
 app.use(express.logger());
 
@@ -26,3 +29,6 @@ app.use(express.static(__dirname + '/public'));
 var port = process.env.PORT || 3000;
 
 app.listen(port);
+
+console.log('API Key', global.config.APIKEY);
+
