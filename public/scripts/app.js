@@ -28,5 +28,6 @@ angular.module('app.filters', [
 //Services
 angular.module('app.services', [
   'app.services.data',
+  'app.services.api',
   'app.services.options'
 ]);
