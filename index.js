@@ -1,11 +1,11 @@
 var express = require('express');
 var stylus = require('stylus');
 var nib = require('nib');
-
 var app = express();
 
-// Make config available for any module
+// Make config available for any modules
 global.config = require('./config.json');
+
 
 // Log requests
 app.use(express.logger());
@@ -21,6 +21,8 @@ app.use(stylus.middleware({
       .use(nib());
   }
 }));
+
+require('./routes.js')(app);
 
 // Serve static files
 app.use(express.static(__dirname + '/public'));
