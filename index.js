@@ -1,9 +1,7 @@
 var express = require('express');
 var stylus = require('stylus');
 var nib = require('nib');
-
 var app = express();
-
 // Log requests
 app.use(express.logger());
 
