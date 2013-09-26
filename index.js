@@ -1,12 +1,14 @@
 var express = require('express');
 var stylus = require('stylus');
 var nib = require('nib');
-var replay = require('./replay.js')
+var replay = require('./replay.js');
 var app = express();
 
-var blah = replay.countLastHits("npc_dota_hero_tinker");
-console.log(blah);
-// process.stdout.write(blah + '\n');
+var lastHits = replay.countLastHits("npc_dota_hero_furion");
+var denies = replay.countDenies("npc_dota_hero_furion");
+console.log("denies: ", denies);
+console.log("last hits: ", lastHits);
+
 // Log requests
 app.use(express.logger());
 
