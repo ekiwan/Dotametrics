@@ -12,7 +12,7 @@ angular.module('dotametrics')
         })
         .when('/cs', {
           controller: 'CsController',
-          templateUrl: 'templates/winrate.html'
+          templateUrl: 'templates/cs.html'
         });
     }
   ]);
