@@ -29,7 +29,7 @@ module.exports = {
   countDenies: function(heroName) {
     var count = 0;
     var total = 0;
-    var deniesOverTime = [[],[]];
+    var deniesOverTime = [[0],[0]];
     var heroDenies = _.filter(denies, function(entry) {return entry.hero === heroName});
     for (var i = 0; i < heroDenies.length; i++) {
       count++;
