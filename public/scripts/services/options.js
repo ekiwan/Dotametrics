@@ -49,7 +49,7 @@ angular.module('app.services.options', [])
           onAnimationComplete : null
         },
 
-      winrateOptions:
+      lastHitOptions:
         {
           //Boolean - If we show the scale above the chart data     
           scaleOverlay : false,
@@ -81,7 +81,7 @@ angular.module('app.services.options', [])
           scaleFontFamily : "'Arial'",
           
           //Number - Scale label font size in pixels  
-          scaleFontSize : 12,
+          scaleFontSize : 14,
           
           //String - Scale label font weight style  
           scaleFontStyle : "normal",
@@ -99,7 +99,7 @@ angular.module('app.services.options', [])
           scaleGridLineWidth : 1, 
           
           //Boolean - Whether the line is curved between points
-          bezierCurve : true,
+          bezierCurve : false,
           
           //Boolean - Whether to show a dot for each point
           pointDot : true,

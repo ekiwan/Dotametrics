@@ -17,7 +17,7 @@ module.exports = {
     var heroLastHits = _.filter(cs, function(entry) {return entry.hero === heroName});
     for (var i = 0; i < heroLastHits.length; i++) {
       count++;
-      if (count >= Math.round(heroLastHits.length / 10) || i === heroLastHits.length - 1) {
+      if (count >= Math.round(heroLastHits.length / 12) || i === heroLastHits.length - 1) {
         total += count;
         lastHitsOverTime[1].push(total);
         lastHitsOverTime[0].push(convertSeconds(heroLastHits[i].time));

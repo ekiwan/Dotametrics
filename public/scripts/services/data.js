@@ -13,11 +13,12 @@ angular.module('app.services.data', [])
           $http.get('/api/cs/npc_dota_hero_furion')
             .success(function(data) {
               scope.lastHitData = data[1];
-
+              scope.lastHitTimestamps = data[0];
             })
             .error(function(data, status) {
               console.log('ya blew it')
             });
+            
         }
       }
     };
