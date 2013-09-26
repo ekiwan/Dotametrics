@@ -2,17 +2,17 @@ angular.module('dotametrics')
   .config(['$routeProvider',
     function($routeProvider) {
       $routeProvider
-        .when('/bar', {
-          controller: 'BarController',
-          templateUrl: 'templates/bar.html'
+        .when('/denies', {
+          controller: 'DeniesController',
+          templateUrl: 'templates/denies.html'
         })
         .when('/kda', {
           controller: 'KdaController',
           templateUrl: 'templates/kda.html'
         })
-        .when('/cs', {
-          controller: 'CsController',
-          templateUrl: 'templates/cs.html'
+        .when('/lasthits', {
+          controller: 'LastHitsController',
+          templateUrl: 'templates/lasthits.html'
         });
     }
   ]);

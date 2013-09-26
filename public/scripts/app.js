@@ -11,10 +11,10 @@ angular.module('dotametrics', [
 
 //Controllers
 angular.module('app.controllers', [
-  'app.controllers.bar',
+  'app.controllers.denies',
   'app.controllers.kda',
   'app.controllers.nav',
-  'app.controllers.cs'
+  'app.controllers.lasthits'
 ]);
 
 //Directives

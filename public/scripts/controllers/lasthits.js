@@ -1,5 +1,5 @@
-angular.module('app.controllers.cs', ['app.services.data', 'app.services.options'])
-  .controller('CsController', ['$scope', 'Data', 'Options', function ($scope, Data, Options) { 
+angular.module('app.controllers.lasthits', ['app.services.data', 'app.services.options'])
+  .controller('LastHitsController', ['$scope', 'Data', 'Options', function ($scope, Data, Options) { 
     console.log('cs chart controller', $scope)
     //$scope.lastHitData = [];
     Data.data.getLastHitData($scope);
