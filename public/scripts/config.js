@@ -10,8 +10,8 @@ angular.module('dotametrics')
           controller: 'KdaController',
           templateUrl: 'templates/kda.html'
         })
-        .when('/winrate', {
-          controller: 'WinrateController',
+        .when('/cs', {
+          controller: 'CsController',
           templateUrl: 'templates/winrate.html'
         });
     }

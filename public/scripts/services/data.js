@@ -1,5 +1,5 @@
 angular.module('app.services.data', [])
-  .factory('Data', [function () { 
+  .factory('Data', ['$http', function ($http) { 
     return {
       data: {
         barData:
@@ -8,11 +8,17 @@ angular.module('app.services.data', [])
             [5, 0, 5]
           ],
         kdaData: [12, 4, 9],
-        winrateData:
-          [
-            [14.2,22.5,35,44.7,47,49.3,50,50.4,52.6],
-            [28,39,40,44,47.6,49.6,53,56.4,58.8]
-          ]
+        getLastHitData: function(scope) {
+          console.log("making the request")
+          $http.get('/api/cs/npc_dota_hero_furion')
+            .success(function(data) {
+              scope.lastHitData = data[1];
+
+            })
+            .error(function(data, status) {
+              console.log('ya blew it')
+            });
+        }
       }
     };
   }]);

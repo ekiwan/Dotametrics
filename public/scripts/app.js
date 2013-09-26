@@ -14,7 +14,7 @@ angular.module('app.controllers', [
   'app.controllers.bar',
   'app.controllers.kda',
   'app.controllers.nav',
-  'app.controllers.winrate'
+  'app.controllers.cs'
 ]);
 
 //Directives
