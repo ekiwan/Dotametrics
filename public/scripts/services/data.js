@@ -12,7 +12,17 @@ angular.module('app.services.data', [])
               console.log('ya blew it')
             });
         },
-        kdaData: [12, 4, 9],
+        getKdaData: function(scope) {
+          $http.get('/api/kda/npc_dota_hero_furion')
+            .success(function(data) {
+              scope.kills = data.kills;
+              scope.deaths = data.deaths;
+              scope.assists = data.assists;
+            })
+            .error(function(data, status) {
+              console.log('ya blew it')
+            });
+        },
         getLastHitData: function(scope) {
           //console.log("making the request")
           $http.get('/api/cs/npc_dota_hero_furion')
