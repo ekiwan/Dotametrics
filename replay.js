@@ -45,6 +45,21 @@ module.exports = {
     return deniesOverTime;
   },
   countKda: function(heroName) {
-    
+    var kills = 0;
+    var deaths = 0;
+    var assists = 0;
+    var kda = {};
+    for (var i = 0; i < heroKills.length; i++) {
+      if (heroKills[i].killer === heroName) {
+        kda.kills = ++kills;
+      }
+      if (heroKills[i].dead === heroName) {
+        kda.deaths = ++deaths;
+      }
+      if (_.contains(heroKills[i].assists, heroName)) {
+        kda.assists = ++assists;
+      };
+    }
+    return kda;
   }
 };

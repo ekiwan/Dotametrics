@@ -4,10 +4,7 @@ var nib = require('nib');
 var replay = require('./replay.js');
 var app = express();
 
-// var lastHits = replay.countLastHits("npc_dota_hero_furion");
-// var denies = replay.countDenies("npc_dota_hero_furion");
-// console.log("denies: ", denies);
-// console.log("last hits: ", lastHits);
+console.log(replay.countKda('npc_dota_hero_furion'));
 
 // Log requests
 app.use(express.logger());
