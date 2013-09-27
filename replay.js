@@ -1,6 +1,8 @@
 var cs = require('./data/cs.js');
 var denies = require('./data/denies.js');
+var heroKills = require('./data/herokills.js');
 var _ = require('underscore');
+
 var convertSeconds = function(number) {
   var realTime = number / 30;
   var mins = Math.floor( realTime / 60 );
@@ -41,5 +43,8 @@ module.exports = {
       }
     }
     return deniesOverTime;
+  },
+  countKda: function(heroName) {
+    
   }
 };
