@@ -4,7 +4,7 @@ var nib = require('nib');
 var replay = require('./replay.js');
 var app = express();
 
-console.log(replay.countKda('npc_dota_hero_furion'));
+//console.log(replay.countKda('npc_dota_hero_furion'));
 
 // Log requests
 app.use(express.logger());

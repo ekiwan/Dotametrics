@@ -12,4 +12,10 @@ module.exports = function(app) {
     var deniesOverTime = replay.countDenies(req.params.heroName);
     res.json(deniesOverTime);
   })
+
+  app.get('/api/kda/:heroName', function(req, res, next) {
+    console.log('getting kda for ' + req.params.heroName);
+    var kda = replay.countKda(req.params.heroName);
+    res.json(kda);
+  })
 };
