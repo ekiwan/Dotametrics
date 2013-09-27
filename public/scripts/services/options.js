@@ -90,13 +90,10 @@ angular.module('app.services.options', [])
           segmentShowStroke : true,
 
           //String - The colour of each segment stroke
-          segmentStrokeColor : "#fff",
+          segmentStrokeColor : "gray",
 
           //Number - The width of each segment stroke
-          segmentStrokeWidth : 24,
-
-          //The percentage of the chart that we cut out of the middle.
-          percentageInnerCutout : 50,
+          segmentStrokeWidth : 2,
 
           //Boolean - Whether we should animate the chart
           animation : true,
@@ -107,14 +104,11 @@ angular.module('app.services.options', [])
           //String - Animation easing effect
           animationEasing : "easeOutBounce",
 
-          //Boolean - Whether we animate the rotation of the Doughnut
+          //Boolean - Whether we animate the rotation of the Pie
           animateRotate : true,
 
-          //Boolean - Whether we animate scaling the Doughnut from the centre
-          animateScale : false,
-
-          //Function - Will fire on animation completion.
-          onAnimationComplete : null
+          //Boolean - Whether we animate scaling the Pie from the centre
+          animateScale : true
         },
 
       lastHitOptions:
