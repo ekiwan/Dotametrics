@@ -14,7 +14,8 @@ angular.module('app.controllers', [
   'app.controllers.denies',
   'app.controllers.cs',
   'app.controllers.nav',
-  'app.controllers.lasthits'
+  'app.controllers.lasthits',
+  'app.controllers.kda'
 ]);
 
 //Directives

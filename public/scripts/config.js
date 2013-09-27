@@ -13,6 +13,10 @@ angular.module('dotametrics')
         .when('/lasthits', {
           controller: 'LastHitsController',
           templateUrl: 'templates/lasthits.html'
+        })
+        .when('/kda', {
+          controller: 'KdaController',
+          templateUrl: 'templates/kda.html'
         });
     }
   ]);
