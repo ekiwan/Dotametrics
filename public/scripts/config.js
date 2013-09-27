@@ -6,9 +6,9 @@ angular.module('dotametrics')
           controller: 'DeniesController',
           templateUrl: 'templates/denies.html'
         })
-        .when('/kda', {
-          controller: 'KdaController',
-          templateUrl: 'templates/kda.html'
+        .when('/cs', {
+          controller: 'csController',
+          templateUrl: 'templates/cs.html'
         })
         .when('/lasthits', {
           controller: 'LastHitsController',
