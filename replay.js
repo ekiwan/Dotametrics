@@ -1,6 +1,8 @@
 var cs = require('./data/cs.js');
 var denies = require('./data/denies.js');
 var heroKills = require('./data/herokills.js');
+var runes = require('./data/runes.js');
+
 var _ = require('underscore');
 
 var convertSeconds = function(number) {
@@ -61,5 +63,16 @@ module.exports = {
       };
     }
     return kda;
+  },
+  countRunes: function() {
+    var runeControl = {};
+    for (var i = 0; i < runes.length; i++) {
+      if (!runeControl[runes[i].hero]) {
+        runeControl[runes[i].hero] = 1;
+      } else {
+        runeControl[runes[i].hero]++;
+      }
+    }
+    return runeControl;
   }
 };
