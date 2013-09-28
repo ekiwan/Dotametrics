@@ -15,7 +15,8 @@ angular.module('app.controllers', [
   'app.controllers.cs',
   'app.controllers.nav',
   'app.controllers.lasthits',
-  'app.controllers.kda'
+  'app.controllers.kda',
+  'app.controllers.runes'
 ]);
 
 //Directives
