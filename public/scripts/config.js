@@ -17,6 +17,10 @@ angular.module('dotametrics')
         .when('/kda', {
           controller: 'KdaController',
           templateUrl: 'templates/kda.html'
-        });
+        })
+        .when('/runes', {
+          controller: 'RuneController',
+          templateUrl: 'templates/runes.html'
+        })
     }
   ]);
