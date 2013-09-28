@@ -18,4 +18,11 @@ module.exports = function(app) {
     var kda = replay.countKda(req.params.heroName);
     res.json(kda);
   })
+
+  app.get('/api/runes', function(req, res, next) {
+    console.log('getting rune data');
+    var runes = replay.countRunes();
+    res.json(runes);
+  })
+
 };
