@@ -33,6 +33,17 @@ angular.module('app.services.data', [])
             .error(function(data, status) {
               console.log('ya blew it')
             });
+        },
+        getRunesData: function(scope) {
+          $http.get('/api/runes')
+            .success(function(data) {
+              scope.runesDataRadiant = [[data.npc_dota_hero_mirana, data.npc_dota_hero_pudge].reduce(function(a, b) {return a + b})];
+              scope.runesDataDire = [[data.npc_dota_hero_tinker, data.npc_dota_hero_furion, data.npc_dota_hero_slardar].reduce(function(a, b) {return a + b})];
+              scope.runesHeroes = ['Rune Control'];
+            })
+            .error(function(data, status) {
+              console.log('ya blew it')
+            });
         }
       }
     };

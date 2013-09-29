@@ -19,7 +19,7 @@ angular.module('dotametrics')
           templateUrl: 'templates/kda.html'
         })
         .when('/runes', {
-          controller: 'RuneController',
+          controller: 'RunesController',
           templateUrl: 'templates/runes.html'
         })
     }
