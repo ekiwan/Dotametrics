@@ -8,13 +8,11 @@ angular.module('app.controllers.runes', ['app.services.data', 'app.services.opti
           labels : $scope.runesHeroes,
           datasets : [
             {
-              fillColor : "rgba(151,187,205,1)",
-              strokeColor : "rgba(151,187,205,1)",
+              fillColor : "rgba(22,79,16,1)",
               data : $scope.runesDataRadiant
             },
             {
-              fillColor : "rgba(151,187,205,1)",
-              strokeColor : "rgba(151,187,205,1)",
+              fillColor : "rgba(189,16,13,1)",
               data : $scope.runesDataDire
             }
           ]

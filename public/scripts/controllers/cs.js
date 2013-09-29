@@ -9,11 +9,11 @@ angular.module('app.controllers.cs', ['app.services.data', 'app.services.options
         $scope.chart = [
           {
             value: $scope.lastHitData[$scope.lastHitData.length - 1],
-            color: "#1AB221"
+            color: "rgba(22,79,16,1)"
           },
           {
             value : $scope.deniesData[$scope.deniesData.length - 1],
-            color : "#F7464A"
+            color : "rgba(189,16,13,1)"
           }
         ];
       }

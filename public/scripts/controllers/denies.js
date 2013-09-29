@@ -8,10 +8,10 @@ angular.module('app.controllers.denies', ['app.services.data', 'app.services.opt
         labels : $scope.deniesTimestamps,
         datasets : [
           {
-            fillColor : "rgba(151,187,205,0)",
-            strokeColor : "#f1c40f",
-            pointColor : "rgba(151,187,205,0)",
-            pointStrokeColor : "#f1c40f",
+            fillColor : "rgba(79,143,73,0.2)",
+            strokeColor : "rgba(22,79,16,1)",
+            pointColor : "rgba(79,143,73,0)",
+            pointStrokeColor : "rgba(79,143,73,1)",
             data : $scope.deniesData 
           }
         ]

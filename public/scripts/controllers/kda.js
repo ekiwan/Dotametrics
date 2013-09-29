@@ -8,15 +8,15 @@ angular.module('app.controllers.kda', ['app.services.data', 'app.services.option
         $scope.chart = [
           {
             value: $scope.kills,
-            color: "#1AB221"
+            color: "rgba(22,79,16,1)"
           },
           {
             value : $scope.deaths,
-            color : "#F7464A"
+            color : "rgba(189,16,13,1)"
           },
           {
             value: $scope.assists,
-            color: "#4148FF"
+            color: "rgba(88,156,173,1)"
           }
         ];
       }

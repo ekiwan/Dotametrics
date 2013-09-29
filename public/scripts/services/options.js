@@ -1,6 +1,35 @@
 angular.module('app.services.options', [])
   .factory('Options', [function () { 
     return {
+      csOptions:
+        {
+          //Boolean - Whether we should show a stroke on each segment
+          segmentShowStroke : false,
+
+          //Number - The width of each segment stroke
+          segmentStrokeWidth : 3,
+
+          //The percentage of the chart that we cut out of the middle.
+          percentageInnerCutout : 25,
+          
+          //Boolean - Whether we should animate the chart   
+          animation : true,
+          
+          //Number - Amount of animation steps
+          animationSteps : 100,
+          
+          //String - Animation easing effect
+          animationEasing : "easeInOutElastic",
+          
+          //Boolean - Whether we animate the rotation of the Doughnut
+          animateRotate : true,
+
+          //Boolean - Whether we animate scaling the Doughnut from the centre
+          animateScale : false,
+          
+          //Function - Will fire on animation completion.
+          onAnimationComplete : null
+        },
       deniesOptions:
         {
           //Boolean - If we show the scale above the chart data     
@@ -18,7 +47,7 @@ angular.module('app.services.options', [])
           scaleStartValue : 0,
 
           //String - Colour of the scale line 
-          scaleLineColor : "rgba(0,0,0,.3)",
+          scaleLineColor : "rgba(0,0,0,1)",
           
           //Number - Pixel width of the scale line  
           scaleLineWidth : 1,
@@ -39,13 +68,13 @@ angular.module('app.services.options', [])
           scaleFontStyle : "normal",
           
           //String - Scale label font colour  
-          scaleFontColor : "#666",  
+          scaleFontColor : "#000",  
           
           ///Boolean - Whether grid lines are shown across the chart
           scaleShowGridLines : true,
           
           //String - Colour of the grid lines
-          scaleGridLineColor : "rgba(0,0,0,.1)",
+          scaleGridLineColor : "rgba(0,0,0,.6)",
           
           //Number - Width of the grid lines
           scaleGridLineWidth : 1, 
@@ -66,7 +95,7 @@ angular.module('app.services.options', [])
           datasetStroke : true,
           
           //Number - Pixel width of dataset stroke
-          datasetStrokeWidth : 2,
+          datasetStrokeWidth : 3,
           
           //Boolean - Whether to fill the dataset with a colour
           datasetFill : true,
@@ -128,7 +157,7 @@ angular.module('app.services.options', [])
           scaleStartValue : null,
 
           //String - Colour of the scale line 
-          scaleLineColor : "rgba(0,0,0,.3)",
+          scaleLineColor : "rgba(0,0,0,1)",
           
           //Number - Pixel width of the scale line  
           scaleLineWidth : 1,
@@ -149,13 +178,13 @@ angular.module('app.services.options', [])
           scaleFontStyle : "normal",
           
           //String - Scale label font colour  
-          scaleFontColor : "#666",  
+          scaleFontColor : "#000",  
           
           ///Boolean - Whether grid lines are shown across the chart
           scaleShowGridLines : true,
           
           //String - Colour of the grid lines
-          scaleGridLineColor : "rgba(0,0,0,.1)",
+          scaleGridLineColor : "rgba(0,0,0,.6)",
           
           //Number - Width of the grid lines
           scaleGridLineWidth : 1, 
@@ -176,7 +205,7 @@ angular.module('app.services.options', [])
           datasetStroke : true,
           
           //Number - Pixel width of dataset stroke
-          datasetStrokeWidth : 2,
+          datasetStrokeWidth : 3,
           
           //Boolean - Whether to fill the dataset with a colour
           datasetFill : true,
@@ -210,7 +239,7 @@ angular.module('app.services.options', [])
           scaleStartValue : 0,
 
           //String - Colour of the scale line     
-          scaleLineColor : "rgba(0,0,0,.5)",
+          scaleLineColor : "rgba(0,0,0,1)",
           
           //Number - Pixel width of the scale line     
           scaleLineWidth : 1,
@@ -231,13 +260,13 @@ angular.module('app.services.options', [])
           scaleFontStyle : "normal",
           
           //String - Scale label font colour 
-          scaleFontColor : "#666", 
+          scaleFontColor : "#000", 
           
           ///Boolean - Whether grid lines are shown across the chart
           scaleShowGridLines : true,
           
           //String - Colour of the grid lines
-          scaleGridLineColor : "rgba(0,0,0,.2)",
+          scaleGridLineColor : "rgba(0,0,0,.6)",
           
           //Number - Width of the grid lines
           scaleGridLineWidth : 1,  
