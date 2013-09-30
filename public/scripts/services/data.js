@@ -1,18 +1,22 @@
 angular.module('app.services.data', [])
-  .factory('Data', ['$http', function ($http) { 
+  .factory('Data', ['$http', '$q', function ($http, $q) { 
     return {
-      data: {
-        getDeniesData: function(scope) {
+        getDeniesData: function() {
+          var d = $q.defer();
           $http.get('/api/denies/npc_dota_hero_furion')
             .success(function(data) {
-              scope.deniesData = data[1];
-              scope.deniesTimestamps = data[0];
+              var newData = {};
+              newData.deniesData = data[1];
+              newData.deniesTimestamps = data[0];
+              console.log("data->", newData);
+              d.resolve(newData);
             })
             .error(function(data, status) {
               console.log('ya blew it')
             });
+          return d.promise;
         },
-        getKdaData: function(scope) {
+        getKdaData: function() {
           $http.get('/api/kda/npc_dota_hero_furion')
             .success(function(data) {
               scope.kills = data.kills;
@@ -45,6 +49,5 @@ angular.module('app.services.data', [])
               console.log('ya blew it')
             });
         }
-      }
     };
   }]);

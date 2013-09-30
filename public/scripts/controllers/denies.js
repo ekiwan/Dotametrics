@@ -1,11 +1,14 @@
 angular.module('app.controllers.denies', ['app.services.data', 'app.services.options'])
   .controller('DeniesController', ['$scope', 'Data', 'Options', function ($scope, Data, Options) { 
     console.log('denies chart controller', $scope)
-    Data.data.getDeniesData($scope);
-  $scope.$watch('deniesData + deniesTimestamps', function() {
-    if($scope.deniesData && $scope.deniesTimestamps) {
+
+    $scope.deniesData = Data.getDeniesData();
+
+    $scope.$watch('deniesData', function(n) {
+      if (!n) return;
+
       $scope.chart = {
-        labels : $scope.deniesTimestamps,
+        labels : n.deniesTimestamps,
         datasets : [
           {
             fillColor : "rgba(79,143,73,0.2)",
@@ -16,7 +19,7 @@ angular.module('app.controllers.denies', ['app.services.data', 'app.services.opt
           }
         ]
       };
-    }
-  })
+    });
+  
     $scope.options = Options.deniesOptions;
   }]);

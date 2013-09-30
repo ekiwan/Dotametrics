@@ -1,7 +1,8 @@
 angular.module('app.controllers.kda', ['app.services.data', 'app.services.options'])
   .controller('KdaController', ['$scope', 'Data', 'Options', function ($scope, Data, Options) {
     console.log('kda chart controller', $scope)
-    Data.data.getKdaData($scope);
+    // Data.data.getKdaData($scope);
+    $scope.killsData = Data.getKdaData();
 
     $scope.$watch('kills + deaths + assists', function() {
       if($scope.kills && $scope.deaths && $scope.assists) {
