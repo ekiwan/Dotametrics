@@ -12,12 +12,13 @@ Dotametrics currently supports the following statistics:
   * KDA (Kills, Deaths, Assists) ratio
   * Rune Control (Radiant vs Dire)
 
-## Installation
+## Requirements
 
-Requirements
  * node.js
  * npm
  * nodemon
+
+## Installation
 
 * Fork and clone then repo
 * Install dependencies
