@@ -14,22 +14,31 @@ Dotametrics currently supports the following statistics:
 
 ## Requirements
 
- * node.js
- * npm
- * nodemon
+ * [Node.js](http://nodejs.org/)
+ * [npm](https://npmjs.org/)
+ * [nodemon](https://github.com/remy/nodemon)
 
 ## Installation
 
 * Fork and clone then repo
-* Install dependencies
+* Install dependencies:
 
 ```js
 npm install
 ```
 
-* Start server
+* Start server:
 
 ```js
 nodemon server.js
 ```
+
+## Stack
+
+Dotametrics makes use of the following open-source resources:
+ * [Node.js](http://nodejs.org/)
+ * [Express](http://expressjs.com/)
+ * [AngularJS](http://angularjs.org/)
+ * [ChartJS](http://www.chartjs.org/)
+ * [Angles](http://lgsilver.github.io/angles/)
 
