@@ -20,7 +20,7 @@ Dotametrics currently supports the following statistics:
 
 ## Installation
 
-* Fork and clone then repo
+* Fork and clone the repo
 * Install dependencies:
 
 ```js
