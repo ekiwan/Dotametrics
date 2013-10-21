@@ -14,6 +14,21 @@ Dotametrics currently supports the following statistics:
 
 ## Installation
 
+Requirements
+ * node.js
+ * npm
+ * nodemon
+
 * Fork and clone then repo
 * Install dependencies
+
+```js
+npm install
+```
+
+* Start server
+
+```js
+nodemon server.js
+```
 
